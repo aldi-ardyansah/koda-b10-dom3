@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script>
+        const labelName = document.createElement("span");
+        labelName.textContent = "Siapa nama anda?";
+
+        const inputName = document.createElement("input");
+
+        const labelAge = document.createElement("span");
+        labelAge.textContent = "Berapa umur anda?";
+
+        const inputAge = document.createElement("input");
+        inputAge.type = "number";
+
+        const labelGender = document.createElement("span");
+        labelGender.textContent = "Apa jenis kelamin anda?";
+
+        const labelMale = document.createElement("span");
+        labelMale.textContent = "Laki-laki";
+
+        const labelFemale = document.createElement("span");
+        labelFemale.textContent = "Perempuan";
+
+        const inputMale = document.createElement("input");
+        inputMale.type = "radio";
+
+        const inputFemale = document.createElement("input");
+        inputFemale.type = "radio";
+
+        const labelSmoker = document.createElement("span");
+        labelSmoker.textContent = "Apakah anda perokok?";
+
+        const labelYes = document.createElement("span");
+        labelYes.textContent = "Ya";
+
+        const labelNo = document.createElement("span");
+        labelNo.textContent = "Tidak";
+
+        const inputYes = document.createElement("input");
+        inputYes.type = "radio";
+
+        const inputNo = document.createElement("input");
+        inputNo.type = "radio";
+
+        const labelCigar = document.createElement("span");
+        labelCigar.textContent = "Jika anda perokok, rokok apa yang pernah anda coba?";
+
+        const labelCigar1 = document.createElement("span");
+        labelCigar1.textContent = "Gudang Garam Filter";
+
+        const labelCigar2 = document.createElement("span");
+        labelCigar2.textContent = "Lucky Strike";
+
+        const labelCigar3 = document.createElement("span");
+        labelCigar3.textContent = "Marlboro";
+
+        const labelCigar4 = document.createElement("span");
+        labelCigar4.textContent = "Esse";
+
+        const checkBox1 = document.createElement("input");
+        checkBox1.type = "checkbox";
+
+        const checkBox2 = document.createElement("input");
+        checkBox2.type = "checkbox";
+
+        const checkBox3 = document.createElement("input");
+        checkBox3.type = "checkbox";
+
+        const checkBox4 = document.createElement("input");
+        checkBox4.type = "checkbox";
+
+        const buttonSubmit = document.createElement("button");
+        buttonSubmit.type = "submit";
+        buttonSubmit.textContent = "Submit";
+
+        const buttonReset = document.createElement("button");
+        buttonReset.type = "reset";
+        buttonReset.textContent = "Reset";
+
+        const elements = [
+            labelName, document.createElement("br"), inputName, document.createElement("br"),
+            labelAge, document.createElement("br"), inputAge, document.createElement("br"),
+            labelGender, document.createElement("br"), labelMale, inputMale, labelFemale, inputFemale, document.createElement("br"),
+            labelSmoker, document.createElement("br"), labelYes, inputYes, labelNo, inputNo, document.createElement("br"),
+            labelCigar, document.createElement("br"),
+            checkBox1, labelCigar1, document.createElement("br"),
+            checkBox2, labelCigar2, document.createElement("br"),
+            checkBox3, labelCigar3, document.createElement("br"),
+            checkBox4, labelCigar4, document.createElement("br"),
+            buttonSubmit, buttonReset
+        ];
+
+        elements.forEach(el => document.body.appendChild(el));
+    </script>
+</body>
+</html>
