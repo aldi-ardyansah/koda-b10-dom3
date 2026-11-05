@@ -1,4 +1,4 @@
-# Document Object Manipulation 3
+# Document Object Model 3
 
 ## Membuat Form Perokok dan Non-Perokok
 
